@@ -1,0 +1,7 @@
+{
+  "name": "СПО · Uno WebAssembly",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-10.0-bookworm",
+  "forwardPorts": [5000],
+  "portsAttributes": {"5000": {"label": "Учебное приложение Uno", "onAutoForward": "openBrowser"}},
+  "postCreateCommand": "dotnet workload restore SPOUno/SPOUno.csproj && dotnet restore SPOUno/SPOUno.csproj"
+}
