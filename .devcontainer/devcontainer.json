@@ -17,5 +17,5 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet --version && sudo \"$(command -v dotnet)\" workload install wasm-tools && dotnet restore SPOUno/SPOUno.csproj"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3 libpython3-stdlib && python3 -c 'import shlex' && dotnet --version && sudo \"$(command -v dotnet)\" workload install wasm-tools && dotnet restore SPOUno/SPOUno.csproj"
 }
